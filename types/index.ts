@@ -6,13 +6,13 @@ export type TypeUser = {
 };
 
 export type TypeTweet = {
-  content: string;
   user: TypeUser;
+  content: string;
   id: string;
   image?: string;
   createdAt: string;
-  numberOfComments: number;
-  numberOfRetweets: number;
-  numberOfLikes: number;
-  impressions: number;
+  numberOfComments?: number;
+  numberOfRetweets?: number;
+  numberOfLikes?: number;
+  impressions?: number;
 };
